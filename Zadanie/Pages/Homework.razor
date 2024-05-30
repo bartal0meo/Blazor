@@ -1,0 +1,14 @@
+﻿@page "/homework/{tekst?}"
+
+
+
+@if (String.IsNullOrEmpty(Tekst))
+{
+    <h1>Praca domowa</h1>
+}
+else
+{
+    <h1>@Tekst</h1>
+}
+
+<button class="btn btn-primary my-3" @onclick="GoToIndex">Strona główna</button>
